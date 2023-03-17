@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n;
+	int n,x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int x;
-	x = n / 10;
+	x = n % 10;
 	if (x > 5 )
 	{
 		printf("Last digit of %d is %d and is greater than 5",n,x);
@@ -22,7 +22,7 @@ int main(void)
         }
 	else if (x == 0)
         {
-                printf("Last digit of %d is %d and is %d",n,x);
+                printf("Last digit of %d is 0 and is %d",n,x);
         }
 
 	return (0);
