@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isalpha - check for char
- * @c: parameter
- *
+ * add - check for char
+ * @a: parameter
+ * @b: parameter
  * Return: on success 1.
  *      on fail -1.
 */
