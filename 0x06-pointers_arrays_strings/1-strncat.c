@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - check for char
+ * _strncat - check for char
  * @dest: parameter
  * @src: parameter
  * @n: param
@@ -10,7 +10,7 @@
  *
 */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
