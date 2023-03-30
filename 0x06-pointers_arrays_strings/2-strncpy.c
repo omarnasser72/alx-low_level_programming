@@ -6,8 +6,7 @@
  * @src: parameter
  * @n: parameter
  *
- * Return: on success 1.
- *
+ * Return: dest
 */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -16,10 +15,9 @@ char *_strncpy(char *dest, char *src, int n)
 
 	i = 0;
 
-	while (srcj[i] != '\0' && i < n)
+	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
-		i++;
 		i++;
 	}
 	while (i < n)
