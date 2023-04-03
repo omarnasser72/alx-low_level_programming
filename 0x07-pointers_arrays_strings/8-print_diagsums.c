@@ -1,17 +1,16 @@
 #include "main.h"
-#include "stdlib.h"
+#include "stdio.h"
 
 /**
  * print_diagsums - check for char
  * @a: parameter
  * @size: parame
  *
- *
 */
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i;
 	int d1 = 0;
 	int d2 = 0;
 
@@ -21,5 +20,6 @@ void print_diagsums(int *a, int size)
 		d2 += a[size - i - 1];
 		a += size;
 	}
-	printf("%d, %d\n", d1, d2);
+	printf("%d, ", d1);
+	printf("%d\n", d2);
 }
