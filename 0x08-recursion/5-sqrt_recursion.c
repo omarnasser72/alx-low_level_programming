@@ -15,8 +15,7 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	return (sqrt2(n, 0));
-
-
+}
 
 /**
  * sqrt2 - check for char
