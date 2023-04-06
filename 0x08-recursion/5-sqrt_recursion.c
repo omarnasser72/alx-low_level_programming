@@ -1,6 +1,6 @@
 #include "main.h"
 
-int sqrt(int n, int i);
+int sqrt2(int n, int i);
 
 /**
  * _sqrt_recursion - check for char
@@ -14,12 +14,12 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (sqrt(n, 0));
+	return (sqrt2(n, 0));
 
 
 
 /**
- * sqrt - check for char
+ * sqrt2 - check for char
  * @n: parameter
  * @i: param
  *
@@ -27,11 +27,11 @@ int _sqrt_recursion(int n)
  *
 */
 
-int sqrt(int n, int i)
+int sqrt2(int n, int i)
 {
 	if (i * i > n)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	return (sqrt(n, i + 1));
+	return (sqrt2(n, i + 1));
 }
