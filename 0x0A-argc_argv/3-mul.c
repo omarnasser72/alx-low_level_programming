@@ -1,4 +1,5 @@
-#include "stdio.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - check for char
@@ -18,9 +19,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int x = argv[1];
-		int y = argv[2];
-		int res = argv[1] * argv[2]'
+		int res = atoi(argv[1] * argv[2]);
 
 		printf("%d\n", res);
 		return (0);
