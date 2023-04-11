@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		int i;
+		unsigned int i;
 
 		for (i = 0; i < size; i++)
 		{
@@ -26,4 +26,4 @@ char *create_array(unsigned int size, char c)
 		}
 		return (ptr);
 	}
-
+}
