@@ -10,8 +10,8 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *ptr = (char*)calloc(size, sizeof(char));
-	
+	char *ptr = (char *)calloc(size, sizeof(char));
+
 	if (ptr == NULL || size == 0)
 	{
 		return (NULL);
