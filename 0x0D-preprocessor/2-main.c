@@ -7,8 +7,8 @@
  *
 */
 
-int main()
+int main(void)
 {
-  _putchar("%s\n", __FILE__);
-  return (0);
+	_putchar("%s\n", __FILE__);
+	return (0);
 }
