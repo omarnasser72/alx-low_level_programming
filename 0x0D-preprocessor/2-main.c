@@ -2,8 +2,6 @@
 
 /**
  * main - check for char
- * @argc: parameter
- * @argv: parameter
  *
  * Return: 0
  *
@@ -11,6 +9,6 @@
 
 int main()
 {
-  _putchar("%s", __FILE__);
+  _putchar("%s\n", __FILE__);
   return(0);
 }
