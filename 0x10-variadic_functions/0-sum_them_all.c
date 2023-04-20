@@ -3,7 +3,7 @@
 /**
  * sum_them_all - fun
  * @n: parameter
- *
+ * @...: elipse
  * Return: on success 1.
  *
 */
@@ -22,7 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum += va_arg(p, int);
 	}
-
 	va_end(p);
 	return (sum);
 }
