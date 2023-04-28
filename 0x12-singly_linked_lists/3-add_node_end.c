@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds a new node 
- * @head: double pointer 
- * @str: string 
+ * add_node_end - adds a new node
+ * @head: double pointer
+ * @str: string
  *
  * Return: address of the new element
  */
@@ -25,7 +25,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
-	
+
 	if (*head == NULL)
 	{
 		*head = new;
