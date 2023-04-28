@@ -3,14 +3,13 @@
 #include "lists.h"
 
 /**
- * add_node - add node at front
- * @head: parameter
- * @str: str
- * Return: on success 1.
+ * add_node_end - adds a new node 
+ * @head: double pointer 
+ * @str: string 
  *
-*/
-
-list_t *add_node(list_t **head, const char *str)
+ * Return: address of the new element
+ */
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
 	list_t *curr = *head;
@@ -21,21 +20,20 @@ list_t *add_node(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 	if (!new)
-	{
 		return (NULL);
-	}
+
 	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
-
+	
 	if (*head == NULL)
 	{
 		*head = new;
 		return (new);
 	}
+
 	while (curr->next)
 		curr = curr->next;
-
-	curr->next = new;
+	curr->next = new;	
 	return (new);
 }
