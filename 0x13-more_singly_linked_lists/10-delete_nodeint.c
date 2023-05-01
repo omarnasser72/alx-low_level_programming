@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - summation of n
+ * delete_nodeint_at_index - delete node
  * @head: head ptr to listint_t
  * @index: position
  * Return: return 1 succeeded -1 if not
